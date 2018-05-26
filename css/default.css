@@ -5,11 +5,12 @@ body {
 
 body {
     margin: 0;
+    background-color: #f1f1f1;
     overflow: hidden;
 }
 
 .links {
-    margin: 0;
+    margin: 40px 0;
     padding: 0;
     display: block;
     list-style-type: none;
@@ -52,43 +53,44 @@ body {
 /* - ONE */
 
 .one {
-    background-color: white;
     transition: background-color 0.2s ease-in-out;
 }
 
 .one .icon {
     margin: 1px auto;
-    width: 300px;
+    width: 500px;
     display: block;
 }
 
 .one.on {
-    background-color: #eeeeee;
+
 }
 
 .one.on .icon {
-    animation-name: fadeInUp;
-    animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 1.0s;
 }
 
 .one.off .icon {
-    animation-name: fadeOutDown;
+    animation-name: fadeOut;
     animation-duration: 0.0s;
 }
 
 .one .title {
-    margin: 5px 0;
-    padding: 0 25px;
-    font-size: 65px;
+    margin: 0;
+    padding: 0;
+    font-size: 60px;
+    font-weight: 900;
 }
 
 .one .subtitle {
-    margin: 5px 0;
-    padding: 0 25px;
-    font-size: 45px;
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
 }
 
 .one.on .title {
+    color: #193650;
     animation-name: fadeInUp;
     animation-duration: 1.0s;
 }
@@ -99,6 +101,7 @@ body {
 }
 
 .one.on .subtitle {
+    color: #fdbf5e;
     animation-name: fadeInUp;
     animation-duration: 1.5s;
 }
@@ -109,10 +112,12 @@ body {
 }
 
 .one .text {
-    padding: 5px 25px;
+    padding: 0;
 }
 
 .one.on .text {
+    font-size: 18px;
+    line-height: 1.5;
     animation-name: fadeInUp;
     animation-duration: 2.0s;
 }
@@ -125,107 +130,117 @@ body {
 /* - TWO */
 .two .icon {
     margin: 1px auto;
-    width: 350px;
+    width: 450px;
     display: block;
 }
 
 .two.on .icon {
-    animation-name: flipInX;
-    animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0s;
 }
 
 .two.off .icon {
-    animation-name: flipOutX;
+    animation-name: fadeOut;
     animation-duration: 0.0s;
 }
 
-.two h1 {
-    padding: 25px;
+.two .title {
+    padding: 0;
     font-size: 45px;
-    color: #41a085;
+    color: #c04d8f;
     text-shadow: 1px 1px 2px #10121940;
 }
 
-.two.on h1 {
-    animation-name: flipInX;
+.two.on .title {
+    animation-name: slideInDown;
     animation-duration: 1.0s;
 }
 
-.two.off h1 {
-    animation-name: flipOutX;
+.two.off .title {
+    animation-name: slideOutDown;
     animation-duration: 0.0s;
 }
 
-.two p {
-    padding: 5px 25px;
-    color: #111111;
+.two .text {
+    padding: 0;
+    color: #684f87;
     font-size: 25px;
 }
 
-.two.on p {
-    animation-name: flipInX;
+.two.on .text {
+    animation-name: slideInDown;
     animation-duration: 1.5s;
 }
 
-.two.off p {
-    animation-name: flipOutX;
+.two.off .text {
+    animation-name: slideOutDown;
     animation-duration: 0.0s;
+}
+
+.two.on .link {
+    animation-name: slideInLeft;
+    animation-duration: 1.5s;
 }
 
 /* - THREE */
 .three .icon {
     margin: 1px auto;
-    width: 350px;
+    width: 100px;
     display: block;
 }
 
 .three.on .icon {
-    animation-name: slideInDown;
-    animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0s;
 }
 
 .three.off .icon {
-    animation-name: slideOutUp;
-    animation-duration: 0.0s;
+    animation-name: fadeOut;
+    animation-duration: 0s;
 }
 
-.three h1 {
-    padding: 25px;
+.three .title {
+    padding: 0;
     font-size: 45px;
     color: #dc6923;
     text-shadow: 1px 1px 2px #10121940;
 }
 
-.three.on h1 {
+.three.on .title {
     animation-name: slideInDown;
     animation-duration: 1.0s;
 }
 
-.three.off h1 {
+.three.off.title {
     animation-name: slideOutUp;
     animation-duration: 0.0s;
 }
 
-.three p {
-    padding: 5px 25px;
+.three .text {
+    padding: 0;
     color: #111111;
     font-size: 25px;
 }
 
-.three.on p {
+.three.on .text {
     animation-name: slideInDown;
-    animation-duration: 1.5s;
+    animation-duration: 1.4s;
 }
 
-.three.off p {
+.three.off .text {
     animation-name: slideOutUp;
     animation-duration: 0.0s;
+}
+
+.three.on .link {
+    animation-name: slideInDown;
+    animation-duration: 1.8s;
 }
 
 /* - FOUR */
 .four .icon {
     margin: 1px auto;
-    width: 350px;
+    width: 250px;
     display: block;
 }
 
@@ -301,6 +316,7 @@ body {
 
 .box .middle .content.half {
     width: 50%;
+    height: 100%;
 }
 
 .box .bottom {
