@@ -12,17 +12,17 @@
         distance: '20px',
 
         // Time in milliseconds.
-        duration: 300,
+        duration: 0,
         delay: 0,
 
         // Starting angles in degrees, will transition from these values to 0 in all axes.
         rotate: {x: 0, y: 0, z: 0},
 
         // Starting opacity value, before transitioning to the computed opacity.
-        opacity: 0.95,
+        opacity: 1,
 
         // Starting scale value, will transition from this value to 1
-        scale: 0.99,
+        scale: 1,
 
         // Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
         easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
@@ -56,18 +56,19 @@
 
         // Callbacks that fire for each triggered element reveal, and reset.
         beforeReveal: function (domEl) {
-            j(domEl).addClass('on').removeClass('off');
+            // j(domEl).addClass('on').removeClass('off');
         },
         beforeReset: function (domEl) {
-            j(domEl).addClass('off').removeClass('on');
+            // j(domEl).addClass('off').removeClass('on');
         },
 
         // Callbacks that fire for each completed element reveal, and reset.
         afterReveal: function (domEl) {
+            j(domEl).addClass('on').removeClass('off');
 
         },
         afterReset: function (domEl) {
-
+            j(domEl).addClass('off').removeClass('on');
         }
     };
 
