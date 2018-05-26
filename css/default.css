@@ -7,8 +7,24 @@ body {
     margin: 0;
 }
 
-.one, .two, .three, .four {
+.links {
+    margin:  0;
+    display: block;
+    list-style-type: none;
+    padding: 5px 25px;
+}
 
+.links > .each {
+    display: inline-block;
+}
+
+.links > .each > .link {
+    padding: 5px 15px;
+    border: 1px solid #111111;
+    border-radius: 5px;
+    text-decoration:  none;
+    color: #111111;
+    display: block;
 }
 
 /* - ONE */
@@ -29,31 +45,48 @@ body {
     animation-duration: 0.0s;
 }
 
-.one h1 {
-    padding: 25px;
+.one .title {
+    margin: 5px 0;
+    padding: 0 25px;
+    font-size: 65px;
+}
+
+.one .subtitle {
+    margin: 5px 0;
+    padding: 0 25px;
     font-size: 45px;
 }
 
-.one.on h1 {
+.one.on .title {
     animation-name: fadeInUp;
     animation-duration: 1.0s;
 }
 
-.one.off h1 {
+.one.off .title {
     animation-name: fadeOutDown;
     animation-duration: 0.0s;
 }
 
-.one p {
-    padding: 5px 25px;
-}
-
-.one.on p {
+.one.on .subtitle {
     animation-name: fadeInUp;
     animation-duration: 1.5s;
 }
 
-.one.off p {
+.one.off .subtitle {
+    animation-name: fadeOutDown;
+    animation-duration: 0.0s;
+}
+
+.one .text {
+    padding: 5px 25px;
+}
+
+.one.on .text {
+    animation-name: fadeInUp;
+    animation-duration: 2.0s;
+}
+
+.one.off .text {
     animation-name: fadeOutDown;
     animation-duration: 0.0s;
 }
@@ -166,12 +199,12 @@ body {
 }
 
 .four.on .icon {
-    animation-name: fadeInUp;
+    animation-name: slideInUp;
     animation-duration: 0.4s;
 }
 
 .four.off .icon {
-    animation-name: fadeOutDown;
+    animation-name: slideOutDown;
     animation-duration: 0.0s;
 }
 
@@ -184,12 +217,12 @@ body {
 }
 
 .four.on h1 {
-    animation-name: fadeInUp;
+    animation-name: slideInUp;
     animation-duration: 1.0s;
 }
 
 .four.off h1 {
-    animation-name: fadeOutDown;
+    animation-name: slideOutDown;
     animation-duration: 0.0s;
 }
 
