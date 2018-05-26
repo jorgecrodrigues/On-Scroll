@@ -7,10 +7,11 @@ body {
     margin: 0;
 }
 
-/* - ONE */
 .one, .two, .three, .four {
-    visibility: hidden;
+
 }
+
+/* - ONE */
 
 .one .icon {
     margin: 1px auto;
@@ -20,7 +21,7 @@ body {
 
 .one.on .icon {
     animation-name: fadeInUp;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 .one.off .icon {
@@ -65,12 +66,12 @@ body {
 }
 
 .two.on .icon {
-    animation-name: fadeInUp;
-    animation-duration: 0.5s;
+    animation-name: flipInX;
+    animation-duration: 0.4s;
 }
 
 .two.off .icon {
-    animation-name: fadeOutDown;
+    animation-name: flipOutX;
     animation-duration: 0.0s;
 }
 
@@ -82,12 +83,12 @@ body {
 }
 
 .two.on h1 {
-    animation-name: fadeInUp;
+    animation-name: flipInX;
     animation-duration: 1.0s;
 }
 
 .two.off h1 {
-    animation-name: fadeOutDown;
+    animation-name: flipOutX;
     animation-duration: 0.0s;
 }
 
@@ -98,12 +99,12 @@ body {
 }
 
 .two.on p {
-    animation-name: fadeInUp;
+    animation-name: flipInX;
     animation-duration: 1.5s;
 }
 
 .two.off p {
-    animation-name: fadeOutDown;
+    animation-name: flipOutX;
     animation-duration: 0.0s;
 }
 
@@ -115,12 +116,12 @@ body {
 }
 
 .three.on .icon {
-    animation-name: fadeInUp;
-    animation-duration: 0.5s;
+    animation-name: slideInDown;
+    animation-duration: 0.4s;
 }
 
 .three.off .icon {
-    animation-name: fadeOutDown;
+    animation-name: slideOutUp;
     animation-duration: 0.0s;
 }
 
@@ -132,12 +133,12 @@ body {
 }
 
 .three.on h1 {
-    animation-name: fadeInUp;
+    animation-name: slideInDown;
     animation-duration: 1.0s;
 }
 
 .three.off h1 {
-    animation-name: fadeOutDown;
+    animation-name: slideOutUp;
     animation-duration: 0.0s;
 }
 
@@ -148,12 +149,12 @@ body {
 }
 
 .three.on p {
-    animation-name: fadeInUp;
+    animation-name: slideInDown;
     animation-duration: 1.5s;
 }
 
 .three.off p {
-    animation-name: fadeOutDown;
+    animation-name: slideOutUp;
     animation-duration: 0.0s;
 }
 
@@ -166,7 +167,7 @@ body {
 
 .four.on .icon {
     animation-name: fadeInUp;
-    animation-duration: 0.5s;
+    animation-duration: 0.4s;
 }
 
 .four.off .icon {

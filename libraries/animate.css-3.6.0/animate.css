@@ -1532,7 +1532,7 @@
         transform: translate3d(0, 100%, 0);
     }
 
-    70% {
+    50% {
         opacity: 0;
     }
 
@@ -3257,6 +3257,9 @@
     from {
         -webkit-transform: translate3d(0, -100%, 0);
         transform: translate3d(0, -100%, 0);
+    }
+
+    50% {
         visibility: visible;
     }
 

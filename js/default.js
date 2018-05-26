@@ -6,7 +6,7 @@
     // Scroll Reveal Options
     var options = {
         // 'bottom', 'left', 'top', 'right'
-        origin: 'bottom',
+        origin: 'top',
 
         // Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
         distance: '20px',
@@ -19,13 +19,14 @@
         rotate: {x: 0, y: 0, z: 0},
 
         // Starting opacity value, before transitioning to the computed opacity.
-        opacity: 1,
+        opacity: 0,
 
         // Starting scale value, will transition from this value to 1
         scale: 1,
 
         // Accepts any valid CSS easing, e.g. 'ease', 'ease-in-out', 'linear', etc.
-        easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        // easing: 'cubic-bezier(0.6, 0.2, 0.1, 1)',
+        easing: 'ease',
 
         // `<html>` is the default reveal container. You can pass either:
         // DOM Node, e.g. document.querySelector('.fooContainer')
@@ -46,7 +47,7 @@
 
         // Change when an element is considered in the viewport. The default value
         // of 0.20 means 20% of an element must be visible for its reveal to occur.
-        viewFactor: 0.2,
+        viewFactor: 0.30,
 
         // Pixel values that alter the container boundaries.
         // e.g. Set `{ top: 48 }`, if you have a 48px tall fixed toolbar.
@@ -55,20 +56,24 @@
         viewOffset: {top: 0, right: 0, bottom: 0, left: 0},
 
         // Callbacks that fire for each triggered element reveal, and reset.
+        // Importante! A classe para iniciar as animações devem ser aplicadas antes do início
+        // das animações da biblioteca, do contrário pode ter um efeito indesejado.
         beforeReveal: function (domEl) {
-            // j(domEl).addClass('on').removeClass('off');
+            j(domEl).addClass('on').removeClass('off');
         },
         beforeReset: function (domEl) {
-            // j(domEl).addClass('off').removeClass('on');
+            j(domEl).addClass('off').removeClass('on');
         },
 
         // Callbacks that fire for each completed element reveal, and reset.
+        // Importante! A classe para iniciar as animações devem ser aplicadas antes do início
+        // das animações da biblioteca, do contrário pode ter um efeito indesejado.
         afterReveal: function (domEl) {
-            j(domEl).addClass('on').removeClass('off');
+            // j(domEl).addClass('on').removeClass('off');
 
         },
         afterReset: function (domEl) {
-            j(domEl).addClass('off').removeClass('on');
+            // j(domEl).addClass('off').removeClass('on');
         }
     };
 
