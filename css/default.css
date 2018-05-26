@@ -5,10 +5,11 @@ body {
 
 body {
     margin: 0;
+    overflow: hidden;
 }
 
 .links {
-    margin:  0;
+    margin: 0;
     display: block;
     list-style-type: none;
     padding: 5px 25px;
@@ -22,7 +23,7 @@ body {
     padding: 5px 15px;
     border: 1px solid #111111;
     border-radius: 5px;
-    text-decoration:  none;
+    text-decoration: none;
     color: #111111;
     display: block;
 }

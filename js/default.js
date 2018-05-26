@@ -65,6 +65,10 @@
     // Scroll Reveal
     window.sr = ScrollReveal(options);
 
+    j(window.document).ready(function () {
+        window.location.href = "#one";
+    });
+
     j(window).on('load', function () {
         window.sr.reveal('.one');
         window.sr.reveal('.two');
