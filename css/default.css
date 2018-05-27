@@ -280,14 +280,14 @@ body.loaded {
     background-position: left center;
     background-size: 80%;
     position: absolute;
-    z-index:  -1;
+    z-index: -1;
 }
 
 .three .detail {
     margin-left: auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.84);
-    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.81);
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 50px 50px rgba(255, 255, 255, 0.7);
     display: block;
 }
 
@@ -295,38 +295,54 @@ body.loaded {
     padding: 0;
     font-weight: 800;
     font-size: 45px;
-}
-
-.three.on .detail .title {
-    animation-name: fadeIn;
-    animation-duration: 1.0s;
-}
-
-.three.off .detail .title {
-    animation-name: fadeOut;
-    animation-duration: 0.0s;
+    text-shadow: 2px 2px 1px black;
+    color:  black;
 }
 
 .three .detail .subtitle {
-    margin-bottom:  25px;
+    margin-bottom: 25px;
     padding: 0;
     font-size: 20px;
     color: black;
+    /* text-shadow: 2px 2px 1px white; */
 }
 
-.three.on .detail .subtitle {
-    animation-name: fadeIn;
+.three.on .detail .first,
+.three.on .detail .second,
+.three.on .detail .third,
+.three.on .detail .fourth,
+.three.on .detail .fifth,
+.three.on .detail .sixth {
+    animation-name: slideInUp;
+}
+
+.three.on .detail .first {
+    animation-duration: 0.2s;
+}
+
+.three.on .detail .second {
+    animation-duration: 0.4s;
+}
+
+.three.on .detail .third {
+    animation-duration: 0.6s;
+}
+
+.three.on .detail .fourth {
+    animation-duration: 0.8s;
+}
+
+.three.on .detail .fifth {
     animation-duration: 1.0s;
 }
 
-.three.off .detail .subtitle {
-    animation-name: fadeOut;
-    animation-duration: 0.0s;
+.three.on .detail .sixth {
+    animation-duration: 1.2s;
 }
 
 .three.on .detail .link {
-    animation-name: fadeIn;
-    animation-duration: 1.8s;
+    animation-name: slideInUp;
+    animation-duration: 1.5s;
 }
 
 /* - FOUR */
