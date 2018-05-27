@@ -76,7 +76,9 @@
         });
     });
 
+    // On Content loaded.
     j(window).on('load', function () {
+        j("body").addClass("loaded");
         window.sr.reveal('.one');
         window.sr.reveal('.two');
         window.sr.reveal('.three');

@@ -5,14 +5,14 @@ body {
 }
 
 body {
-    margin: 0;
-    background-color: white;
     font-family: 'Dosis', sans-serif;
-    overflow:  hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
 }
 
-div {
-    position: relative;
+body.loaded {
+    opacity: 1;
 }
 
 /* NAVIGATION */
@@ -116,7 +116,7 @@ div {
 
 .one .icon {
     margin: 1px auto;
-    width: 400px;
+    width: 450px;
     display: block;
 }
 
@@ -189,6 +189,7 @@ div {
 .two {
     background-color: #efefef;
 }
+
 .two .icon {
     margin: 1px auto;
     width: 450px;
@@ -335,20 +336,29 @@ div {
 
 /*CONTENT POSITION*/
 
-.container {
-    margin: 5px auto;
-    width: 80%;
-}
-
 .box {
     width: 100%;
     height: 100%;
     display: table;
 }
 
+/* To Bootstrap */
+
+.box > .row {
+    width: 100%;
+    display: table-row;
+}
+
+.box > .row > div {
+    height: 100%;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+/* End to Bootstrap */
+
 .box .top {
     width: 100%;
-    /* height: 20%; */
     display: table-row;
 }
 
