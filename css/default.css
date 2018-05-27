@@ -1,14 +1,71 @@
 html,
 body {
+    margin: 0;
     height: 100%;
 }
 
 body {
     margin: 0;
-    background-color: #f1f1f1;
-    overflow: hidden;
+    background-color: white;
+    font-family: 'Dosis', sans-serif;
+    /* overflow:  hidden; */
 }
 
+div {
+    position: relative;
+}
+
+/* NAVIGATION */
+.nav {
+    margin: 0;
+    padding: 0 0 20px 0;
+    box-shadow: 0 4px 9px 0 rgba(30, 59, 91, 0.1);
+    display: block;
+}
+
+.nav .default {
+    margin: 25px auto 0 auto;
+    width: 90%;
+    font-weight: 700;
+    position: relative;
+}
+
+.nav .default:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav .default .left-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left;
+    position: relative;
+}
+
+.nav .default .left-links > li > .link {
+}
+
+.nav .default .right-links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+.nav .default .right-links > li {
+    display: inline-block;
+}
+
+.nav .default .right-links > li > .link {
+    margin: 1px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+}
+
+/* Links Design */
 .links {
     margin: 40px 0;
     padding: 0;
@@ -58,7 +115,7 @@ body {
 
 .one .icon {
     margin: 1px auto;
-    width: 500px;
+    width: 400px;
     display: block;
 }
 
@@ -68,7 +125,7 @@ body {
 
 .one.on .icon {
     animation-name: fadeIn;
-    animation-duration: 1.0s;
+    animation-duration: 0s;
 }
 
 .one.off .icon {
@@ -90,7 +147,7 @@ body {
 }
 
 .one.on .title {
-    color: #193650;
+    color: #85366e;
     animation-name: fadeInUp;
     animation-duration: 1.0s;
 }
@@ -101,7 +158,7 @@ body {
 }
 
 .one.on .subtitle {
-    color: #fdbf5e;
+    color: #41c3d3;
     animation-name: fadeInUp;
     animation-duration: 1.5s;
 }
@@ -116,7 +173,7 @@ body {
 }
 
 .one.on .text {
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.5;
     animation-name: fadeInUp;
     animation-duration: 2.0s;
@@ -128,6 +185,9 @@ body {
 }
 
 /* - TWO */
+.two {
+    background-color: #efefef;
+}
 .two .icon {
     margin: 1px auto;
     width: 450px;
@@ -185,7 +245,7 @@ body {
 /* - THREE */
 .three .icon {
     margin: 1px auto;
-    width: 100px;
+    width: 600px;
     display: block;
 }
 
@@ -202,8 +262,8 @@ body {
 .three .title {
     padding: 0;
     font-size: 45px;
-    color: #dc6923;
-    text-shadow: 1px 1px 2px #10121940;
+    color: #757575;
+    /* text-shadow: 1px 1px 2px #10121940; */
 }
 
 .three.on .title {
@@ -287,13 +347,13 @@ body {
 
 .box .top {
     width: 100%;
-    height: 20%;
+    /* height: 20%; */
     display: table-row;
 }
 
 .box .top .content {
     width: 100%;
-    vertical-align: middle;
+    vertical-align: top;
     display: table-cell;
 }
 
@@ -303,8 +363,12 @@ body {
     display: table-row;
 }
 
-.box .middle .only {
+.box .middle.only {
     height: 100%;
+}
+
+.box .middle.top {
+    /* height: 80%; */
 }
 
 .box .middle .content {
@@ -316,7 +380,6 @@ body {
 
 .box .middle .content.half {
     width: 50%;
-    height: 100%;
 }
 
 .box .bottom {

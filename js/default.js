@@ -8,7 +8,7 @@
         // 'bottom', 'left', 'top', 'right'
         origin: 'bottom',
         // Can be any valid CSS distance, e.g. '5rem', '10%', '20vw', etc.
-        distance: '20px',
+        distance: '0px',
         // Time in milliseconds.
         duration: 0,
         delay: 0,
@@ -66,7 +66,14 @@
     window.sr = ScrollReveal(options);
 
     j(window.document).ready(function () {
-        window.location.href = "#one";
+        // window.location.href = "#one";
+
+        // Scroll to:
+        j(".to").click(function () {
+            j("html, body").animate({
+                scrollTop: j(this.getAttribute("data-go")).offset().top
+            }, 500);
+        });
     });
 
     j(window).on('load', function () {
