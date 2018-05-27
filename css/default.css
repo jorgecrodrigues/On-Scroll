@@ -8,7 +8,7 @@ body {
     margin: 0;
     background-color: white;
     font-family: 'Dosis', sans-serif;
-    /* overflow:  hidden; */
+    overflow:  hidden;
 }
 
 div {
@@ -19,7 +19,7 @@ div {
 .nav {
     margin: 0;
     padding: 0 0 20px 0;
-    box-shadow: 0 4px 9px 0 rgba(30, 59, 91, 0.1);
+    box-shadow: 0 4px 1px 0 rgba(30, 59, 91, 0.1);
     display: block;
 }
 
@@ -110,7 +110,8 @@ div {
 /* - ONE */
 
 .one {
-    transition: background-color 0.2s ease-in-out;
+    background-color: #ffffff;
+    transition: background-color 0.5s ease-in-out;
 }
 
 .one .icon {

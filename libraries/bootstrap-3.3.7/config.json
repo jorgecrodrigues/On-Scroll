@@ -382,19 +382,9 @@
     "@hr-border": "@gray-lighter"
   },
   "css": [
-    "print.less",
-    "type.less",
     "grid.less",
-    "forms.less",
-    "responsive-utilities.less",
-    "navs.less",
-    "navbar.less",
-    "component-animations.less",
-    "dropdowns.less"
+    "responsive-utilities.less"
   ],
-  "js": [
-    "dropdown.js",
-    "collapse.js"
-  ],
+  "js": [],
   "customizerUrl": "<none>"
 }
