@@ -346,6 +346,13 @@ body.loaded {
 }
 
 /* - FOUR */
+.four {
+    background-image: url("../images/homepage.jpg");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
 .four .icon {
     margin: 1px auto;
     width: 250px;
