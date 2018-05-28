@@ -6,7 +6,7 @@ body {
 
 body {
     font-family: 'Dosis', sans-serif;
-    overflow: hidden;
+    /* overflow: hidden; */
     opacity: 0;
     transition: opacity 0.3s ease-in;
 }
@@ -111,7 +111,7 @@ body.loaded {
 /* - ONE */
 
 .one {
-    background-color: #f5f5f5;
+    background-color: #ffffff;
     transition: background-color 0.5s ease-in-out;
 }
 
@@ -128,7 +128,7 @@ body.loaded {
 }
 
 .one.on {
-
+    background-color: #f5f5f5;
 }
 
 .one.on .icon {
@@ -295,8 +295,8 @@ body.loaded {
     padding: 0;
     font-weight: 800;
     font-size: 45px;
-    text-shadow: 2px 2px 1px black;
-    color:  black;
+    /* text-shadow: 2px 2px 1px #b89926; */
+    color: #e53935;
 }
 
 .three .detail .subtitle {
@@ -380,6 +380,46 @@ body.loaded {
     animation-duration: 0.0s;
 }
 
+/* FOOTER */
+.footer {
+    padding: 50px 0;
+    background-color: black;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .footer {
+        text-align: center;
+    }
+}
+
+.footer .info {
+    margin: 25px 0;
+}
+
+.footer .info .name,
+.footer .info .email,
+.footer .info .phone {
+    margin: 2px 0;
+}
+
+.footer .more {
+    text-align: right;
+}
+
+@media (max-width: 991px) {
+    .footer .more {
+        text-align: center;
+    }
+}
+
+.footer .more .location {
+    margin: 15px 0 0 0;
+    font-weight: normal;
+}
+
 /*CONTENT POSITION*/
 
 .box {
@@ -410,22 +450,13 @@ body.loaded {
 
 .box .top .content {
     width: 100%;
-    vertical-align: top;
+    vertical-align: middle;
     display: table-cell;
 }
 
 .box .middle {
     width: 100%;
-    height: 60%;
     display: table-row;
-}
-
-.box .middle.only {
-    height: 100%;
-}
-
-.box .middle.top {
-    /* height: 80%; */
 }
 
 .box .middle .content {
@@ -441,7 +472,6 @@ body.loaded {
 
 .box .bottom {
     width: 100%;
-    height: 20%;
     display: table-row;
 }
 
